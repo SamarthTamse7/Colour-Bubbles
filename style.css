@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+body {
+    background-color: #dadada;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    height: 500px;
+    width: 320px;
+    box-shadow: 5px 5px 6px darkslategray;
+    background-color: black;
+    color: #dadada;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 10px;
+    align-items: center;
+}
+
+#title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#playBtn {
+    height: 45px;
+    width: 90%;
+    border-radius: 6px;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: black;
+    border: 1px solid gold;
+    outline: none;
+    z-index: 1;
+    color: gold;
+    position: relative;
+    transition: all 0.1s linear;
+}
+#playBtn:hover{
+    color: black;
+    background-color: gold;
+}
+#playBtn:active{
+    scale: 0.95;
+}
+
+#showCase {
+    height: 250px;
+    width: 95%;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    position: relative;
+}
+
+#enemy1 {
+    height: 100px;
+    width: 100px;
+    background-color: skyblue;
+    border-radius: 50%;
+    margin: 10px 10px;
+}
+
+#enemy2 {
+    height: 70px;
+    width: 70px;
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 40px;
+}
+
+#player {
+    height: 30px;
+    width: 60px;
+    background-color: crimson;
+    position: absolute;
+    bottom: 0px;
+    left: calc(50% - 30px);
+}
